@@ -19,7 +19,7 @@ app = Flask(__name__)
 api = Api(app)
 
 metrics = PrometheusMetrics(app)
-# mlflow.set_tracking_uri('http://mlflow:5000')
+mlflow.set_tracking_uri('http://mlflow:5000')
 
 class MLModelsDAO:
     def __init__(self):
@@ -107,11 +107,11 @@ class MLModelsDAO:
                     else:
                         logging.warning('Default params were set')
                         model = mod['model']
-                    # with mlflow.start_run(run_name='1'):
-                    model.fit(x, y)
-                    pickle.dump(model, open(self.model_file_name+"{name}.pickle".format(name=model_id), "wb"))
-                    logging.info('Fitting model successfully finished')
-                        # mlflow.log_params(model.get_params())
+                    with mlflow.start_run(run_name='1'):
+                        model.fit(x, y)
+                        pickle.dump(model, open(self.model_file_name+"{name}.pickle".format(name=model_id), "wb"))
+                        logging.info('Fitting model successfully finished')
+                        mlflow.log_params(model.get_params())
                         # signatute = infer_signature(x, model.predict(x))
                         # mlflow.sklearn.log_model(model, 'skl_model', signatute=signatute, registered_model_name='titanic')
 
