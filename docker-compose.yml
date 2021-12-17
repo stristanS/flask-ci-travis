@@ -1,0 +1,29 @@
+version: "2"
+services:
+
+        prometheus:
+                image: prom/prometheus:latest
+                ports:
+                        - 9090:9090
+                volumes:
+                        - ./prometheus.yml:/etc/prometheus/prometheus.yml
+        app:
+                container_name: flask-api
+                build: ./api_project/.
+                ports:
+                        - 8080:8080
+                volumes:
+                        - api_volume:/storage
+                logging:
+                        driver: local
+        mlflow:
+                build: ./mlflow/.
+                ports:
+                        - 5000:5000
+                volumes:
+                        - api_volume:/storage
+                command: mlflow server --host 0.0.0.0 --backend-store-uri sqlite:///ml.db --default-artifact-root /storage
+
+volumes:
+        api_volume:
+

@@ -1,0 +1,15 @@
+artifact_uri: file://wsl%24/Ubuntu/home/stristan/api_project/api_project/mlruns/0/23f0c2374fc44c95948214c8a165923d/artifacts
+end_time: 1639734331116
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 23f0c2374fc44c95948214c8a165923d
+run_uuid: 23f0c2374fc44c95948214c8a165923d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1639734330686
+status: 4
+tags: []
+user_id: Света

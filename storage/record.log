@@ -1,0 +1,771 @@
+2021-12-13 21:09:18,655 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-13 21:09:18,655 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-13 21:09:27,205 INFO root Thread-1 post: Posting data in progress...
+2021-12-13 21:09:27,267 INFO root Thread-1 post: Posting data successfully finished
+2021-12-13 21:09:27,267 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [13/Dec/2021 21:09:27] "POST /post_data HTTP/1.1" 200 -
+2021-12-13 21:09:27,299 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [13/Dec/2021 21:09:27] "GET /post_data HTTP/1.1" 200 -
+2021-12-13 21:09:27,299 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-13 21:09:27,346 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 21:09:27,346 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-13 21:09:27,377 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-13 21:09:27,377 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [13/Dec/2021 21:09:27] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-13 21:09:27,392 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-13 21:09:27,408 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 21:09:27,408 INFO root Thread-4 predict: Prediction in progress...
+2021-12-13 21:09:27,408 ERROR root Thread-4 predict: Fitted model wasnt found
+2021-12-13 21:09:27,408 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [13/Dec/2021 21:09:27] "[31m[1mPOST /predict/1 HTTP/1.1[0m" 400 -
+2021-12-13 21:09:27,439 INFO root Thread-5 post: Posting data in progress...
+2021-12-13 21:09:27,439 INFO root Thread-5 post: Posting data successfully finished
+2021-12-13 21:09:27,439 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-13 21:09:27,455 ERROR root Thread-5 retrain: Initial model wasnt found
+2021-12-13 21:09:27,455 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [13/Dec/2021 21:09:27] "[31m[1mPUT /alter/1 HTTP/1.1[0m" 400 -
+2021-12-13 21:09:27,455 INFO root Thread-6 delete: Deleting model...
+2021-12-13 21:09:27,455 ERROR root Thread-6 delete: No model was found
+2021-12-13 21:09:27,455 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [13/Dec/2021 21:09:27] "[31m[1mDELETE /alter/1 HTTP/1.1[0m" 400 -
+2021-12-13 21:10:36,352 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-13 21:10:36,352 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-13 21:10:39,171 INFO root Thread-1 post: Posting data in progress...
+2021-12-13 21:10:39,187 INFO root Thread-1 post: Posting data successfully finished
+2021-12-13 21:10:39,187 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [13/Dec/2021 21:10:39] "POST /post_data HTTP/1.1" 200 -
+2021-12-13 21:10:39,202 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [13/Dec/2021 21:10:39] "GET /post_data HTTP/1.1" 200 -
+2021-12-13 21:10:39,202 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-13 21:10:39,218 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 21:10:39,218 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-13 21:10:39,234 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-13 21:10:39,234 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [13/Dec/2021 21:10:39] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-13 21:10:39,265 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-13 21:10:39,265 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 21:10:39,265 INFO root Thread-4 predict: Prediction in progress...
+2021-12-13 21:10:39,281 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-13 21:10:39,281 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [13/Dec/2021 21:10:39] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-13 21:10:39,296 INFO root Thread-5 post: Posting data in progress...
+2021-12-13 21:10:39,312 INFO root Thread-5 post: Posting data successfully finished
+2021-12-13 21:10:39,312 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-13 21:10:39,312 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-13 21:10:39,312 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 21:10:39,312 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-13 21:10:39,328 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-13 21:10:39,328 INFO root Thread-5 retrain: Retrain successfully finished
+2021-12-13 21:10:39,328 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [13/Dec/2021 21:10:39] "PUT /alter/1 HTTP/1.1" 200 -
+2021-12-13 21:10:39,328 INFO root Thread-6 delete: Deleting model...
+2021-12-13 21:10:39,328 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-13 21:10:39,328 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [13/Dec/2021 21:10:39] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:17:52,345 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-13 22:17:52,346 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-13 22:17:58,505 INFO root Thread-1 post: Posting data in progress...
+2021-12-13 22:17:58,536 INFO root Thread-1 post: Posting data successfully finished
+2021-12-13 22:17:58,539 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [13/Dec/2021 22:17:58] "POST /post_data HTTP/1.1" 200 -
+2021-12-13 22:17:58,547 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [13/Dec/2021 22:17:58] "GET /post_data HTTP/1.1" 200 -
+2021-12-13 22:17:58,551 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:17:58,565 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:17:58,566 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-13 22:17:58,588 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-13 22:17:58,589 ERROR api Thread-3 log_exception: Exception on /train_model/1 [POST]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 206, in post
+    ml_models.fit(model_id, params)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 770, in func
+    return f(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 694, in func
+    metric = get_metric(response)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 631, in get_metric
+    return parent_metric.labels(**labels.values_for(response))
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in values_for
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in <dictcomp>
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 734, in <lambda>
+    return lambda x: f(x)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 96, in <lambda>
+    labels={'status': lambda resp: resp.inference_time})
+AttributeError: 'Response' object has no attribute 'inference_time'
+2021-12-13 22:17:58,843 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [13/Dec/2021 22:17:58] "[35m[1mPOST /train_model/1 HTTP/1.1[0m" 500 -
+2021-12-13 22:17:58,867 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:17:58,872 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:17:58,875 INFO root Thread-4 predict: Prediction in progress...
+2021-12-13 22:17:58,886 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-13 22:17:58,888 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [13/Dec/2021 22:17:58] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-13 22:17:58,910 INFO root Thread-5 post: Posting data in progress...
+2021-12-13 22:17:58,921 INFO root Thread-5 post: Posting data successfully finished
+2021-12-13 22:17:58,922 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-13 22:17:58,924 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:17:58,930 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:17:58,931 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-13 22:17:58,938 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-13 22:17:58,939 ERROR api Thread-5 log_exception: Exception on /alter/1 [PUT]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 225, in put
+    ml_models.retrain(model_id, params)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 770, in func
+    return f(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 166, in retrain
+    self.fit(model_id, params)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 770, in func
+    return f(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 694, in func
+    metric = get_metric(response)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 631, in get_metric
+    return parent_metric.labels(**labels.values_for(response))
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in values_for
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in <dictcomp>
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 734, in <lambda>
+    return lambda x: f(x)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 96, in <lambda>
+    labels={'status': lambda resp: resp.inference_time})
+AttributeError: 'Response' object has no attribute 'inference_time'
+2021-12-13 22:17:58,941 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [13/Dec/2021 22:17:58] "[35m[1mPUT /alter/1 HTTP/1.1[0m" 500 -
+2021-12-13 22:17:58,945 INFO root Thread-6 delete: Deleting model...
+2021-12-13 22:17:58,949 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-13 22:17:58,950 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [13/Dec/2021 22:17:58] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:18:46,442 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-13 22:18:46,444 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-13 22:18:52,665 INFO root Thread-1 post: Posting data in progress...
+2021-12-13 22:18:52,692 INFO root Thread-1 post: Posting data successfully finished
+2021-12-13 22:18:52,695 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [13/Dec/2021 22:18:52] "POST /post_data HTTP/1.1" 200 -
+2021-12-13 22:18:52,702 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [13/Dec/2021 22:18:52] "GET /post_data HTTP/1.1" 200 -
+2021-12-13 22:18:52,707 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:18:52,736 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:18:52,737 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-13 22:18:52,775 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-13 22:18:52,777 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [13/Dec/2021 22:18:52] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-13 22:18:52,799 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:18:52,805 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:18:52,806 INFO root Thread-4 predict: Prediction in progress...
+2021-12-13 22:18:52,813 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-13 22:18:52,814 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [13/Dec/2021 22:18:52] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-13 22:18:52,836 INFO root Thread-5 post: Posting data in progress...
+2021-12-13 22:18:52,852 INFO root Thread-5 post: Posting data successfully finished
+2021-12-13 22:18:52,853 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-13 22:18:52,855 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:18:52,861 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:18:52,862 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-13 22:18:52,870 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-13 22:18:52,871 INFO root Thread-5 retrain: Retrain successfully finished
+2021-12-13 22:18:52,872 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [13/Dec/2021 22:18:52] "PUT /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:18:52,876 INFO root Thread-6 delete: Deleting model...
+2021-12-13 22:18:52,881 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-13 22:18:52,882 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [13/Dec/2021 22:18:52] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:20:15,438 INFO werkzeug Thread-7 _log: 127.0.0.1 - - [13/Dec/2021 22:20:15] "GET /metrics HTTP/1.1" 200 -
+2021-12-13 22:23:53,732 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-13 22:23:53,733 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-13 22:24:00,606 INFO root Thread-1 post: Posting data in progress...
+2021-12-13 22:24:00,663 INFO root Thread-1 post: Posting data successfully finished
+2021-12-13 22:24:00,668 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [13/Dec/2021 22:24:00] "POST /post_data HTTP/1.1" 200 -
+2021-12-13 22:24:00,679 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [13/Dec/2021 22:24:00] "GET /post_data HTTP/1.1" 200 -
+2021-12-13 22:24:00,683 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:24:00,708 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:24:00,709 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-13 22:24:00,736 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-13 22:24:00,737 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [13/Dec/2021 22:24:00] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-13 22:24:00,762 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:24:00,767 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:24:00,769 INFO root Thread-4 predict: Prediction in progress...
+2021-12-13 22:24:00,776 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-13 22:24:00,777 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [13/Dec/2021 22:24:00] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-13 22:24:00,797 INFO root Thread-5 post: Posting data in progress...
+2021-12-13 22:24:00,807 INFO root Thread-5 post: Posting data successfully finished
+2021-12-13 22:24:00,807 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-13 22:24:00,810 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:24:00,815 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:24:00,816 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-13 22:24:00,827 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-13 22:24:00,827 INFO root Thread-5 retrain: Retrain successfully finished
+2021-12-13 22:24:00,828 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [13/Dec/2021 22:24:00] "PUT /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:24:00,832 INFO root Thread-6 delete: Deleting model...
+2021-12-13 22:24:00,837 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-13 22:24:00,838 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [13/Dec/2021 22:24:00] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:24:06,150 INFO werkzeug Thread-7 _log: 127.0.0.1 - - [13/Dec/2021 22:24:06] "GET /metrics HTTP/1.1" 200 -
+2021-12-13 22:25:07,158 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-13 22:25:07,159 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-13 22:25:12,484 INFO root Thread-1 post: Posting data in progress...
+2021-12-13 22:25:12,523 INFO root Thread-1 post: Posting data successfully finished
+2021-12-13 22:25:12,526 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [13/Dec/2021 22:25:12] "POST /post_data HTTP/1.1" 200 -
+2021-12-13 22:25:12,536 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [13/Dec/2021 22:25:12] "GET /post_data HTTP/1.1" 200 -
+2021-12-13 22:25:12,541 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:25:12,570 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:25:12,571 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-13 22:25:12,596 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-13 22:25:12,597 ERROR api Thread-3 log_exception: Exception on /train_model/1 [POST]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 206, in post
+    ml_models.fit(model_id, params)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 770, in func
+    return f(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 694, in func
+    metric = get_metric(response)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 631, in get_metric
+    return parent_metric.labels(**labels.values_for(response))
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in values_for
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in <dictcomp>
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 734, in <lambda>
+    return lambda x: f(x)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 96, in <lambda>
+    labels={'status': lambda resp: resp.json()})
+TypeError: 'dict' object is not callable
+2021-12-13 22:25:12,695 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [13/Dec/2021 22:25:12] "[35m[1mPOST /train_model/1 HTTP/1.1[0m" 500 -
+2021-12-13 22:25:13,317 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:25:13,324 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:25:13,326 INFO root Thread-4 predict: Prediction in progress...
+2021-12-13 22:25:13,334 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-13 22:25:13,335 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [13/Dec/2021 22:25:13] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-13 22:25:13,354 INFO root Thread-5 post: Posting data in progress...
+2021-12-13 22:25:13,364 INFO root Thread-5 post: Posting data successfully finished
+2021-12-13 22:25:13,365 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-13 22:25:13,367 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:25:13,375 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:25:13,376 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-13 22:25:13,384 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-13 22:25:13,385 ERROR api Thread-5 log_exception: Exception on /alter/1 [PUT]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 225, in put
+    ml_models.retrain(model_id, params)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 770, in func
+    return f(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 166, in retrain
+    self.fit(model_id, params)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 770, in func
+    return f(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 694, in func
+    metric = get_metric(response)
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 631, in get_metric
+    return parent_metric.labels(**labels.values_for(response))
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in values_for
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 754, in <dictcomp>
+    return {key: value(response) for key, value in label_generator}
+  File "C:\Python38\lib\site-packages\prometheus_flask_exporter\__init__.py", line 734, in <lambda>
+    return lambda x: f(x)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 96, in <lambda>
+    labels={'status': lambda resp: resp.json()})
+TypeError: 'dict' object is not callable
+2021-12-13 22:25:13,388 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [13/Dec/2021 22:25:13] "[35m[1mPUT /alter/1 HTTP/1.1[0m" 500 -
+2021-12-13 22:25:13,391 INFO root Thread-6 delete: Deleting model...
+2021-12-13 22:25:13,395 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-13 22:25:13,396 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [13/Dec/2021 22:25:13] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:25:17,180 INFO werkzeug Thread-7 _log: 127.0.0.1 - - [13/Dec/2021 22:25:17] "GET /metrics HTTP/1.1" 200 -
+2021-12-13 22:27:42,871 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-13 22:27:42,872 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-13 22:27:48,148 INFO root Thread-1 post: Posting data in progress...
+2021-12-13 22:27:48,175 INFO root Thread-1 post: Posting data successfully finished
+2021-12-13 22:27:48,179 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [13/Dec/2021 22:27:48] "POST /post_data HTTP/1.1" 200 -
+2021-12-13 22:27:48,188 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [13/Dec/2021 22:27:48] "GET /post_data HTTP/1.1" 200 -
+2021-12-13 22:27:48,194 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:27:48,212 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:27:48,213 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-13 22:27:48,242 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-13 22:27:48,244 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [13/Dec/2021 22:27:48] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-13 22:27:48,289 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:27:48,297 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:27:48,299 INFO root Thread-4 predict: Prediction in progress...
+2021-12-13 22:27:48,308 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-13 22:27:48,310 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [13/Dec/2021 22:27:48] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-13 22:27:48,339 INFO root Thread-5 post: Posting data in progress...
+2021-12-13 22:27:48,358 INFO root Thread-5 post: Posting data successfully finished
+2021-12-13 22:27:48,359 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-13 22:27:48,362 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-13 22:27:48,378 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-13 22:27:48,379 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-13 22:27:48,394 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-13 22:27:48,394 INFO root Thread-5 retrain: Retrain successfully finished
+2021-12-13 22:27:48,398 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [13/Dec/2021 22:27:48] "PUT /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:27:48,411 INFO root Thread-6 delete: Deleting model...
+2021-12-13 22:27:48,433 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-13 22:27:48,435 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [13/Dec/2021 22:27:48] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-13 22:27:49,657 INFO werkzeug Thread-7 _log: 127.0.0.1 - - [13/Dec/2021 22:27:49] "GET /metrics HTTP/1.1" 200 -
+2021-12-16 13:31:59,863 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-16 13:31:59,864 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-16 13:40:36,569 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-16 13:40:36,570 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-16 13:40:38,994 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [16/Dec/2021 13:40:38] "[33mPOST /api/2.0/mlflow/runs/update HTTP/1.1[0m" 404 -
+2021-12-16 13:40:54,107 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [16/Dec/2021 13:40:54] "GET / HTTP/1.1" 200 -
+2021-12-16 13:40:54,144 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [16/Dec/2021 13:40:54] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+2021-12-16 13:40:54,290 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [16/Dec/2021 13:40:54] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+2021-12-16 13:40:54,571 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [16/Dec/2021 13:40:54] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2021-12-16 13:40:54,573 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [16/Dec/2021 13:40:54] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+2021-12-16 13:40:55,017 INFO werkzeug Thread-7 _log: 127.0.0.1 - - [16/Dec/2021 13:40:55] "GET /swagger.json HTTP/1.1" 200 -
+2021-12-16 13:40:55,049 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [16/Dec/2021 13:40:55] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-12-16 14:45:38,792 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-16 14:45:38,792 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-16 14:45:43,536 INFO root Thread-1 post: Posting data in progress...
+2021-12-16 14:45:43,583 INFO root Thread-1 post: Posting data successfully finished
+2021-12-16 14:45:43,583 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [16/Dec/2021 14:45:43] "POST /post_data HTTP/1.1" 200 -
+2021-12-16 14:45:43,598 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [16/Dec/2021 14:45:43] "GET /post_data HTTP/1.1" 200 -
+2021-12-16 14:45:43,598 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-16 14:45:43,645 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 14:45:43,645 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-16 14:45:43,676 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-16 14:45:43,676 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [16/Dec/2021 14:45:43] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-16 14:45:43,707 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-16 14:45:43,707 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 14:45:43,707 INFO root Thread-4 predict: Prediction in progress...
+2021-12-16 14:45:43,723 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-16 14:45:43,723 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [16/Dec/2021 14:45:43] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-16 14:45:43,738 INFO root Thread-5 post: Posting data in progress...
+2021-12-16 14:45:43,754 INFO root Thread-5 post: Posting data successfully finished
+2021-12-16 14:45:43,754 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-16 14:45:43,754 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-16 14:45:43,770 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 14:45:43,770 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-16 14:45:43,770 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-16 14:45:43,770 INFO root Thread-5 retrain: Retrain successfully finished
+2021-12-16 14:45:43,770 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [16/Dec/2021 14:45:43] "PUT /alter/1 HTTP/1.1" 200 -
+2021-12-16 14:45:43,785 INFO root Thread-6 delete: Deleting model...
+2021-12-16 14:45:43,785 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-16 14:45:43,785 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [16/Dec/2021 14:45:43] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-16 21:44:16,716 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-16 21:44:16,716 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-16 21:44:40,027 INFO root Thread-1 post: Posting data in progress...
+2021-12-16 21:44:40,089 INFO root Thread-1 post: Posting data successfully finished
+2021-12-16 21:44:40,105 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [16/Dec/2021 21:44:40] "POST /post_data HTTP/1.1" 200 -
+2021-12-16 21:44:40,105 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [16/Dec/2021 21:44:40] "GET /post_data HTTP/1.1" 200 -
+2021-12-16 21:44:40,105 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-16 21:44:40,200 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 21:44:40,200 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-16 21:44:40,247 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-16 21:44:40,247 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [16/Dec/2021 21:44:40] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-16 21:44:40,278 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-16 21:44:40,278 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 21:44:40,278 INFO root Thread-4 predict: Prediction in progress...
+2021-12-16 21:44:40,293 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-16 21:44:40,293 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [16/Dec/2021 21:44:40] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-16 21:44:40,325 INFO root Thread-5 post: Posting data in progress...
+2021-12-16 21:44:40,325 INFO root Thread-5 post: Posting data successfully finished
+2021-12-16 21:44:40,325 INFO root Thread-5 retrain: Retrain in progress...
+2021-12-16 21:44:40,325 INFO root Thread-5 data_preprocessing: Preprocessing data in progress...
+2021-12-16 21:44:40,340 INFO root Thread-5 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 21:44:40,340 INFO root Thread-5 fit: Fitting model in progress...
+2021-12-16 21:44:40,340 INFO root Thread-5 fit: Fitting model successfully finished
+2021-12-16 21:44:40,340 INFO root Thread-5 retrain: Retrain successfully finished
+2021-12-16 21:44:40,340 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [16/Dec/2021 21:44:40] "PUT /alter/1 HTTP/1.1" 200 -
+2021-12-16 21:44:40,356 INFO root Thread-6 delete: Deleting model...
+2021-12-16 21:44:40,356 INFO root Thread-6 delete: Deleting successfully finished
+2021-12-16 21:44:40,356 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [16/Dec/2021 21:44:40] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-16 22:22:17,712 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-16 22:22:17,712 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-16 22:22:34,722 INFO root Thread-1 post: Posting data in progress...
+2021-12-16 22:22:34,800 INFO root Thread-1 post: Posting data successfully finished
+2021-12-16 22:22:34,800 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [16/Dec/2021 22:22:34] "POST /post_data HTTP/1.1" 200 -
+2021-12-16 22:22:34,815 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [16/Dec/2021 22:22:34] "GET /post_data HTTP/1.1" 200 -
+2021-12-16 22:22:42,162 INFO root Thread-3 post: Posting data in progress...
+2021-12-16 22:22:42,178 INFO root Thread-3 post: Posting data successfully finished
+2021-12-16 22:22:42,178 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [16/Dec/2021 22:22:42] "POST /post_data HTTP/1.1" 200 -
+2021-12-16 22:22:42,178 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [16/Dec/2021 22:22:42] "GET /post_data HTTP/1.1" 200 -
+2021-12-16 22:22:42,271 DEBUG urllib3.connectionpool Thread-5 _new_conn: Starting new HTTP connection (1): localhost:8000
+2021-12-16 22:22:46,347 DEBUG urllib3.util.retry Thread-5 increment: Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=logreg_classifier'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+2021-12-16 22:22:46,347 WARNING urllib3.connectionpool Thread-5 urlopen: Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001997E1885B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=logreg_classifier
+2021-12-16 22:22:46,347 DEBUG urllib3.connectionpool Thread-5 _new_conn: Starting new HTTP connection (2): localhost:8000
+2021-12-16 22:22:50,421 DEBUG urllib3.util.retry Thread-5 increment: Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=logreg_classifier'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+2021-12-16 22:22:54,430 WARNING urllib3.connectionpool Thread-5 urlopen: Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001997E1942E0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=logreg_classifier
+2021-12-16 22:22:54,430 DEBUG urllib3.connectionpool Thread-5 _new_conn: Starting new HTTP connection (3): localhost:8000
+2021-12-16 22:22:58,528 DEBUG urllib3.util.retry Thread-5 increment: Incremented Retry for (url='/api/2.0/mlflow/experiments/get-by-name?experiment_name=logreg_classifier'): Retry(total=2, connect=2, read=5, redirect=5, status=5)
+2021-12-16 22:25:46,467 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-16 22:25:46,467 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-16 22:25:50,722 INFO root Thread-1 post: Posting data in progress...
+2021-12-16 22:25:50,754 INFO root Thread-1 post: Posting data successfully finished
+2021-12-16 22:25:50,754 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [16/Dec/2021 22:25:50] "POST /post_data HTTP/1.1" 200 -
+2021-12-16 22:25:50,754 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [16/Dec/2021 22:25:50] "GET /post_data HTTP/1.1" 200 -
+2021-12-16 22:25:50,769 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-16 22:25:50,786 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 22:25:50,786 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-16 22:25:50,926 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-16 22:25:51,021 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-16 22:25:51,099 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-16 22:25:51,177 DEBUG urllib3.connectionpool Thread-3 _new_conn: Starting new HTTP connection (1): localhost:8000
+2021-12-16 22:25:55,264 DEBUG urllib3.util.retry Thread-3 increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+2021-12-16 22:25:55,264 WARNING urllib3.connectionpool Thread-3 urlopen: Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CDEFE193D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /api/2.0/mlflow/runs/create
+2021-12-16 22:25:55,264 DEBUG urllib3.connectionpool Thread-3 _new_conn: Starting new HTTP connection (2): localhost:8000
+2021-12-16 22:25:59,337 DEBUG urllib3.util.retry Thread-3 increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+2021-12-16 22:26:03,347 WARNING urllib3.connectionpool Thread-3 urlopen: Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CDEFE19820>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /api/2.0/mlflow/runs/create
+2021-12-16 22:26:03,348 DEBUG urllib3.connectionpool Thread-3 _new_conn: Starting new HTTP connection (3): localhost:8000
+2021-12-16 22:26:07,420 DEBUG urllib3.util.retry Thread-3 increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=2, connect=2, read=5, redirect=5, status=5)
+2021-12-16 22:26:11,286 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [16/Dec/2021 22:26:11] "GET / HTTP/1.1" 200 -
+2021-12-16 22:26:11,409 INFO werkzeug Thread-9 _log: 127.0.0.1 - - [16/Dec/2021 22:26:11] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+2021-12-16 22:26:11,423 INFO werkzeug Thread-10 _log: 127.0.0.1 - - [16/Dec/2021 22:26:11] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+2021-12-16 22:26:11,571 INFO werkzeug Thread-12 _log: 127.0.0.1 - - [16/Dec/2021 22:26:11] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2021-12-16 22:26:11,572 INFO werkzeug Thread-11 _log: 127.0.0.1 - - [16/Dec/2021 22:26:11] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+2021-12-16 22:26:11,772 INFO werkzeug Thread-13 _log: 127.0.0.1 - - [16/Dec/2021 22:26:11] "GET /swagger.json HTTP/1.1" 200 -
+2021-12-16 22:26:11,867 INFO werkzeug Thread-14 _log: 127.0.0.1 - - [16/Dec/2021 22:26:11] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-12-16 22:26:15,432 WARNING urllib3.connectionpool Thread-3 urlopen: Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CDEFE199D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /api/2.0/mlflow/runs/create
+2021-12-16 22:26:15,433 DEBUG urllib3.connectionpool Thread-3 _new_conn: Starting new HTTP connection (4): localhost:8000
+2021-12-16 22:26:19,513 DEBUG urllib3.util.retry Thread-3 increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=1, connect=1, read=5, redirect=5, status=5)
+2021-12-16 22:26:35,517 WARNING urllib3.connectionpool Thread-3 urlopen: Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CDEFE792B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /api/2.0/mlflow/runs/create
+2021-12-16 22:26:35,517 DEBUG urllib3.connectionpool Thread-3 _new_conn: Starting new HTTP connection (5): localhost:8000
+2021-12-16 22:27:03,309 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-16 22:27:03,309 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-16 22:27:08,575 INFO root Thread-1 post: Posting data in progress...
+2021-12-16 22:27:08,607 INFO root Thread-1 post: Posting data successfully finished
+2021-12-16 22:27:08,607 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [16/Dec/2021 22:27:08] "POST /post_data HTTP/1.1" 200 -
+2021-12-16 22:27:08,607 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [16/Dec/2021 22:27:08] "GET /post_data HTTP/1.1" 200 -
+2021-12-16 22:27:08,622 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-16 22:27:08,622 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-16 22:27:08,622 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-16 22:27:08,763 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-16 22:27:08,857 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-16 22:27:08,935 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-16 22:27:08,998 DEBUG urllib3.connectionpool Thread-3 _new_conn: Starting new HTTP connection (1): localhost:5000
+2021-12-16 22:27:11,052 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [16/Dec/2021 22:27:11] "[33mPOST /api/2.0/mlflow/runs/create HTTP/1.1[0m" 404 -
+2021-12-16 22:27:11,052 DEBUG urllib3.connectionpool Thread-3 _make_request: http://localhost:5000 "POST /api/2.0/mlflow/runs/create HTTP/1.1" 404 232
+2021-12-16 22:27:11,052 ERROR api Thread-3 log_exception: Exception on /train_model/1 [POST]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 205, in post
+    ml_models.fit(model_id, params)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 111, in fit
+    with mlflow.start_run(run_name='1'):
+  File "C:\Python38\lib\site-packages\mlflow\tracking\fluent.py", line 289, in start_run
+    active_run_obj = client.create_run(experiment_id=exp_id_for_run, tags=tags)
+  File "C:\Python38\lib\site-packages\mlflow\tracking\client.py", line 265, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags)
+  File "C:\Python38\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 104, in create_run
+    return self.store.create_run(
+  File "C:\Python38\lib\site-packages\mlflow\store\tracking\rest_store.py", line 170, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Python38\lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Python38\lib\site-packages\mlflow\utils\rest_utils.py", line 229, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Python38\lib\site-packages\mlflow\utils\rest_utils.py", line 175, in verify_rest_response
+    raise MlflowException("%s. Response body: '%s'" % (base_msg, response.text))
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 404 != 200. Response body: '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+'
+2021-12-16 22:27:11,177 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [16/Dec/2021 22:27:11] "[35m[1mPOST /train_model/1 HTTP/1.1[0m" 500 -
+2021-12-16 22:27:20,490 INFO werkzeug Thread-10 _log: 127.0.0.1 - - [16/Dec/2021 22:27:20] "GET / HTTP/1.1" 200 -
+2021-12-16 22:27:20,722 INFO werkzeug Thread-11 _log: 127.0.0.1 - - [16/Dec/2021 22:27:20] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2021-12-16 22:27:20,723 INFO werkzeug Thread-12 _log: 127.0.0.1 - - [16/Dec/2021 22:27:20] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2021-12-16 22:27:20,726 INFO werkzeug Thread-13 _log: 127.0.0.1 - - [16/Dec/2021 22:27:20] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2021-12-16 22:27:20,728 INFO werkzeug Thread-14 _log: 127.0.0.1 - - [16/Dec/2021 22:27:20] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2021-12-16 22:27:21,001 INFO werkzeug Thread-15 _log: 127.0.0.1 - - [16/Dec/2021 22:27:21] "GET /swagger.json HTTP/1.1" 200 -
+2021-12-17 11:40:03,713 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 11:40:03,715 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-17 11:40:09,431 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 11:40:09,454 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 11:40:09,456 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 11:40:09] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 11:40:09,463 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 11:40:09] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 11:40:09,467 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 11:40:09,517 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 11:40:09,518 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 11:40:09,655 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 11:40:09,749 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 11:40:09,825 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 11:40:10,082 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 11:40:10,153 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 11:40:10] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-17 11:40:10,173 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 11:40:10,180 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 11:40:10,182 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 11:40:10,195 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 11:40:10,197 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 11:40:10] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 12:27:49,507 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 12:27:49,510 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-17 12:27:56,780 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 12:27:56] "GET / HTTP/1.1" 200 -
+2021-12-17 12:27:56,880 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 12:27:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2021-12-17 12:27:57,060 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 12:27:57] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2021-12-17 12:27:57,210 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [17/Dec/2021 12:27:57] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2021-12-17 12:27:57,325 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [17/Dec/2021 12:27:57] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2021-12-17 12:27:57,742 INFO werkzeug Thread-6 _log: 127.0.0.1 - - [17/Dec/2021 12:27:57] "GET /swagger.json HTTP/1.1" 200 -
+2021-12-17 12:27:57,746 INFO werkzeug Thread-7 _log: 127.0.0.1 - - [17/Dec/2021 12:27:57] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-12-17 12:39:21,707 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 12:39:21,708 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-17 12:39:45,608 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 12:39:45,772 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 12:39:45,783 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 12:39:45] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 12:39:45,807 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 12:39:45] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 12:39:45,811 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:39:45,855 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:39:45,855 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 12:39:46,134 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:39:46,261 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:39:46,361 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 12:39:46,692 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 12:39:46,772 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 12:39:46] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-17 12:39:46,804 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:39:46,811 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:39:46,813 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 12:39:46,836 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 12:39:46,837 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 12:39:46] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 12:45:24,748 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 12:45:24,749 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-17 12:45:30,153 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 12:45:30,177 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 12:45:30,179 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 12:45:30] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 12:45:30,185 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 12:45:30] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 12:45:30,189 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:45:30,202 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:45:30,203 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 12:45:30,363 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:45:30,480 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:45:30,646 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 12:45:31,114 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 12:45:31,162 ERROR api Thread-3 log_exception: Exception on /train_model/1 [POST]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 205, in post
+    ml_models.fit(model_id, params)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 115, in fit
+    mlflow.sklearn.save_model(model)
+TypeError: save_model() missing 1 required positional argument: 'path'
+2021-12-17 12:45:31,439 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 12:45:31] "[35m[1mPOST /train_model/1 HTTP/1.1[0m" 500 -
+2021-12-17 12:45:31,471 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:45:31,478 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:45:31,479 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 12:45:31,492 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 12:45:31,493 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 12:45:31] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 12:56:36,687 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 12:56:36,688 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-17 12:56:41,268 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 12:56:41,296 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 12:56:41,300 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 12:56:41] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 12:56:41,307 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 12:56:41] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 12:56:41,311 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:56:41,322 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:56:41,323 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 12:56:41,504 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:56:41,597 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:56:41,670 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 12:56:41,975 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 12:56:42,050 ERROR api Thread-3 log_exception: Exception on /train_model/1 [POST]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 208, in post
+    ml_models.fit(model_id, params)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 118, in fit
+    mlflow.sklearn.log_model(model, 'skl_model', signatute=signatute)
+TypeError: log_model() got an unexpected keyword argument 'signatute'
+2021-12-17 12:56:42,096 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 12:56:42] "[35m[1mPOST /train_model/1 HTTP/1.1[0m" 500 -
+2021-12-17 12:56:42,119 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:56:42,124 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:56:42,125 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 12:56:42,134 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 12:56:42,136 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 12:56:42] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 12:58:33,820 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 12:58:33,821 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-17 12:58:37,707 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 12:58:37,733 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 12:58:37,736 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 12:58:37] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 12:58:37,743 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 12:58:37] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 12:58:37,747 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:58:37,762 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:58:37,763 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 12:58:37,919 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:58:37,999 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 12:58:38,080 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 12:58:38,348 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 12:58:38,382 ERROR api Thread-3 log_exception: Exception on /train_model/1 [POST]
+Traceback (most recent call last):
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python38\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Python38\lib\site-packages\flask_restx\api.py", line 403, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask\views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "C:\Python38\lib\site-packages\flask_restx\resource.py", line 49, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 208, in post
+    ml_models.fit(model_id, params)
+  File "//wsl$/Ubuntu/home/stristan/api_project/api_project/api.py", line 118, in fit
+    mlflow.sklearn.log_model(model, 'skl_model', signatute=signatute, registered_model_name='titanic')
+TypeError: log_model() got an unexpected keyword argument 'signatute'
+2021-12-17 12:58:38,446 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 12:58:38] "[35m[1mPOST /train_model/1 HTTP/1.1[0m" 500 -
+2021-12-17 12:58:38,470 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 12:58:38,475 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 12:58:38,477 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 12:58:38,486 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 12:58:38,487 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 12:58:38] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 12:59:59,590 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 12:59:59,591 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:5000/ (Press CTRL+C to quit)
+2021-12-17 13:00:29,888 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 13:00:30,019 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 13:00:30,027 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 13:00:30] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 13:00:30,045 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 13:00:30] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 13:00:30,049 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 13:00:30,083 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 13:00:30,084 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 13:00:30,292 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 13:00:30,387 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 13:00:30,476 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 13:00:30,807 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 13:00:30,887 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 13:00:30] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-17 13:00:30,910 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 13:00:30,915 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 13:00:30,917 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 13:00:30,941 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 13:00:30,943 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 13:00:30] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 13:37:07,274 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 13:37:07,274 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:8080/ (Press CTRL+C to quit)
+2021-12-17 13:37:11,626 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 13:37:11,641 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 13:37:11,657 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 13:37:11] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 13:37:11,657 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 13:37:11] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 13:37:11,657 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 13:37:11,688 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 13:37:11,688 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 13:37:11,845 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 13:37:11,923 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 13:37:11,985 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 13:37:12,246 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 13:37:12,308 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 13:37:12] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-17 13:37:12,339 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 13:37:12,339 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 13:37:12,339 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 13:37:12,355 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 13:37:12,355 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 13:37:12] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 13:47:01,576 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 13:47:01,576 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:8080/ (Press CTRL+C to quit)
+2021-12-17 13:47:06,578 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 13:47:06,609 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 13:47:06,609 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 13:47:06] "POST /post_data HTTP/1.1" 200 -
+2021-12-17 13:47:06,609 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 13:47:06] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 13:47:06,609 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 13:47:06,656 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 13:47:06,656 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 13:47:06,797 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 13:47:06,859 DEBUG git.cmd Thread-3 execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\api_project, universal_newlines=False, shell=None, istream=None)
+2021-12-17 13:47:06,922 DEBUG git.util Thread-3 is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-17 13:47:07,201 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 13:47:07,274 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 13:47:07] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-17 13:47:07,312 INFO root Thread-8 data_preprocessing: Preprocessing data in progress...
+2021-12-17 13:47:07,312 INFO root Thread-8 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 13:47:07,312 INFO root Thread-8 predict: Prediction in progress...
+2021-12-17 13:47:07,328 INFO root Thread-8 predict: Prediction successfully finished
+2021-12-17 13:47:07,328 INFO werkzeug Thread-8 _log: 127.0.0.1 - - [17/Dec/2021 13:47:07] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 17:42:16,368 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 17:42:16,368 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:8080/ (Press CTRL+C to quit)
+2021-12-17 17:45:32,853 INFO root MainThread post: Posting data in progress...
+2021-12-17 17:45:32,884 INFO root MainThread post: Posting data successfully finished
+2021-12-17 17:50:00,979 WARNING werkzeug MainThread _log:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-12-17 17:50:00,979 INFO werkzeug MainThread _log:  * Running on http://192.168.1.71:8080/ (Press CTRL+C to quit)
+2021-12-17 17:50:21,996 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-17 17:50:22,238 INFO root Thread-1 post: Posting data in progress...
+2021-12-17 17:50:22,363 INFO root Thread-1 post: Posting data successfully finished
+2021-12-17 17:50:22,363 INFO root Thread-1 retrain: Retrain in progress...
+2021-12-17 17:50:22,379 INFO root Thread-1 data_preprocessing: Preprocessing data in progress...
+2021-12-17 17:50:22,561 INFO root Thread-1 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 17:50:22,561 INFO root Thread-1 fit: Fitting model in progress...
+2021-12-17 17:50:22,592 INFO root Thread-1 fit: Fitting model successfully finished
+2021-12-17 17:50:22,592 INFO root Thread-1 retrain: Retrain successfully finished
+2021-12-17 17:50:22,608 INFO werkzeug Thread-1 _log: 127.0.0.1 - - [17/Dec/2021 17:50:22] "PUT /alter/1 HTTP/1.1" 200 -
+2021-12-17 17:50:22,608 DEBUG urllib3.connectionpool MainThread _make_request: http://127.0.0.1:8080 "PUT /alter/1 HTTP/1.1" 200 29
+2021-12-17 17:50:22,624 INFO root MainThread post: Posting data in progress...
+2021-12-17 17:50:22,639 INFO root MainThread post: Posting data successfully finished
+2021-12-17 17:50:22,639 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-17 17:50:22,655 INFO root Thread-2 delete: Deleting model...
+2021-12-17 17:50:22,655 INFO root Thread-2 delete: Deleting successfully finished
+2021-12-17 17:50:22,655 INFO werkzeug Thread-2 _log: 127.0.0.1 - - [17/Dec/2021 17:50:22] "DELETE /alter/1 HTTP/1.1" 200 -
+2021-12-17 17:50:22,655 DEBUG urllib3.connectionpool MainThread _make_request: http://127.0.0.1:8080 "DELETE /alter/1 HTTP/1.1" 200 30
+2021-12-17 17:50:22,655 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-17 17:50:22,655 INFO root Thread-3 data_preprocessing: Preprocessing data in progress...
+2021-12-17 17:50:22,671 INFO root Thread-3 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 17:50:22,671 INFO root Thread-3 fit: Fitting model in progress...
+2021-12-17 17:50:22,671 INFO root Thread-3 fit: Fitting model successfully finished
+2021-12-17 17:50:22,686 INFO werkzeug Thread-3 _log: 127.0.0.1 - - [17/Dec/2021 17:50:22] "POST /train_model/1 HTTP/1.1" 200 -
+2021-12-17 17:50:22,686 DEBUG urllib3.connectionpool MainThread _make_request: http://127.0.0.1:8080 "POST /train_model/1 HTTP/1.1" 200 27
+2021-12-17 17:50:22,702 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-17 17:50:22,717 INFO root Thread-4 data_preprocessing: Preprocessing data in progress...
+2021-12-17 17:50:22,717 INFO root Thread-4 data_preprocessing: Preprocessing data successfully finished
+2021-12-17 17:50:22,717 INFO root Thread-4 predict: Prediction in progress...
+2021-12-17 17:50:22,749 INFO root Thread-4 predict: Prediction successfully finished
+2021-12-17 17:50:22,749 INFO werkzeug Thread-4 _log: 127.0.0.1 - - [17/Dec/2021 17:50:22] "POST /predict/1 HTTP/1.1" 200 -
+2021-12-17 17:50:22,749 DEBUG urllib3.connectionpool MainThread _make_request: http://127.0.0.1:8080 "POST /predict/1 HTTP/1.1" 200 315
+2021-12-17 17:50:22,749 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-17 17:50:22,764 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [17/Dec/2021 17:50:22] "GET /post_data HTTP/1.1" 200 -
+2021-12-17 17:50:22,764 DEBUG urllib3.connectionpool MainThread _make_request: http://127.0.0.1:8080 "GET /post_data HTTP/1.1" 200 86
