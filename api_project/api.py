@@ -89,7 +89,7 @@ class MLModelsDAO:
             logging.error('Invalid input data')
             api.abort(400, 'Invalid input data.')
 
-    # @metrics.do_not_track()
+    @metrics.do_not_track()
     # @metrics.summary('time_fit_model', 'Time takes for inference',
     #                  labels={'status': lambda resp: resp.status})
     def fit(self, model_id, params):

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf0c5653-c10b-4ead-b2ff-f510eeabd539" name="Default Changelist" comment="README">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bf0c5653-c10b-4ead-b2ff-f510eeabd539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/api_project/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_project/api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,6 +156,18 @@
       <option name="presentableId" value="Default" />
       <updated>1635501167569</updated>
     </task>
+    <task id="LOCAL-00001" summary="api mlflow set_tracking_uri">
+      <created>1639772264161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639772264161</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="api mlflow set_tracking_uri" />
+    <option name="LAST_COMMIT_MESSAGE" value="api mlflow set_tracking_uri" />
   </component>
 </project>
