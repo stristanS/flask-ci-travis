@@ -13,6 +13,7 @@ before_script:
   - pip install -r requirements-dev.txt
 #  - docker-compose -f docker-compose.yml up --build -d
 
+
 script:
   - docker-compose run --rm app sh -c "python -m unittest discover"
 
