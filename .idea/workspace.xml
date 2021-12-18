@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf0c5653-c10b-4ead-b2ff-f510eeabd539" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/boston_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/boston_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/titanic_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/titanic_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/record.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/record.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639822723472</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="travis fix">
+      <created>1639823039432</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639823039432</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
