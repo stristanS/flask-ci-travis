@@ -11,10 +11,10 @@ services:
 before_script:
   - pip install docker-compose
   - pip install -r requirements-dev.txt
-  - docker-compose -f docker-compose.yml up --build -d
+#  - docker-compose -f docker-compose.yml up --build -d
 
 script:
-  - docker-compose -f docker-compose.yml run "python -m unittest discover"
+  - docker-compose run --rm app sh -c "python test.py"
 
 branches:
   only:
