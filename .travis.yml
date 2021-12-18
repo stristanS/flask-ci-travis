@@ -17,6 +17,10 @@ before_script:
 script:
   - docker-compose run --rm app sh -c "python -m unittest discover"
 
+after_success:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push ttris117/flask-ci-travis_app:latest
+
 branches:
   only:
     - master
