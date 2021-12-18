@@ -14,7 +14,7 @@ before_script:
   - docker-compose -f docker-compose.yml build
   - docker-compose -f docker-compose.yml up
 
-scripts:
+script:
   - docker-compose -f run unittest tests.test
 
 after_script:
