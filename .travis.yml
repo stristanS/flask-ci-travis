@@ -11,7 +11,7 @@ services:
 before_script:
   - pip install docker-compose
   - pip install -r requirements-dev.txt
-#  - docker-compose -f docker-compose.yml up --build -d
+  - docker-compose -f docker-compose.yml up --build -d
 
 
 script:
@@ -20,6 +20,7 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push ttris117/flask-api:latest
+  - docker-compose -f docker-compose.yml down
 
 branches:
   only:
