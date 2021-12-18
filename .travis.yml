@@ -8,15 +8,14 @@ python:
 services:
   - docker
 
-before_script: pip install docker-compose
-
-install:
+before_script:
+  - pip install docker-compose
   - pip install -r requirements-dev.txt
-
-scripts:
   - docker-compose -f docker-compose.yml build
   - docker-compose -f docker-compose.yml up
-  - python -m unittest api_project.test
+
+scripts:
+  - docker-compose -f run unittest tests.test
 
 after_script:
   - docker-compose -f docker-compose.yml down

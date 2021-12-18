@@ -769,3 +769,66 @@ TypeError: log_model() got an unexpected keyword argument 'signatute'
 2021-12-17 17:50:22,749 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
 2021-12-17 17:50:22,764 INFO werkzeug Thread-5 _log: 127.0.0.1 - - [17/Dec/2021 17:50:22] "GET /post_data HTTP/1.1" 200 -
 2021-12-17 17:50:22,764 DEBUG urllib3.connectionpool MainThread _make_request: http://127.0.0.1:8080 "GET /post_data HTTP/1.1" 200 86
+2021-12-18 12:23:11,847 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-18 12:23:13,996 INFO root MainThread post: Posting data in progress...
+2021-12-18 12:23:14,023 INFO root MainThread post: Posting data successfully finished
+2021-12-18 12:23:14,026 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-18 12:23:16,072 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-18 12:23:18,140 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-18 12:23:20,167 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): 127.0.0.1:8080
+2021-12-18 12:49:50,364 INFO root MainThread post: Posting data in progress...
+2021-12-18 12:49:50,381 INFO root MainThread post: Posting data successfully finished
+2021-12-18 13:00:42,486 INFO root MainThread post: Posting data in progress...
+2021-12-18 13:00:42,508 INFO root MainThread post: Posting data successfully finished
+2021-12-18 13:00:42,508 INFO root MainThread retrain: Retrain in progress...
+2021-12-18 13:00:42,510 ERROR root MainThread retrain: Initial model wasnt found
+2021-12-18 13:00:42,541 INFO root MainThread post: Posting data in progress...
+2021-12-18 13:00:42,554 INFO root MainThread post: Posting data successfully finished
+2021-12-18 13:00:42,558 INFO root MainThread delete: Deleting model...
+2021-12-18 13:00:42,560 ERROR root MainThread delete: No model was found
+2021-12-18 13:00:42,567 INFO root MainThread data_preprocessing: Preprocessing data in progress...
+2021-12-18 13:00:42,643 INFO root MainThread data_preprocessing: Preprocessing data successfully finished
+2021-12-18 13:00:42,645 INFO root MainThread fit: Fitting model in progress...
+2021-12-18 13:00:42,800 DEBUG git.cmd MainThread execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\tests, universal_newlines=False, shell=None, istream=None)
+2021-12-18 13:00:42,909 DEBUG git.cmd MainThread execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\tests, universal_newlines=False, shell=None, istream=None)
+2021-12-18 13:00:42,994 DEBUG git.util MainThread is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-18 13:00:43,054 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): mlflow:5000
+2021-12-18 13:00:45,351 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+2021-12-18 13:00:45,353 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024167BBEFA0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:00:45,354 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (2): mlflow:5000
+2021-12-18 13:00:47,637 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+2021-12-18 13:00:51,642 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024167BBE6A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:00:51,647 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (3): mlflow:5000
+2021-12-18 13:00:53,929 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=2, connect=2, read=5, redirect=5, status=5)
+2021-12-18 13:01:01,932 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024167BBE580>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:01:01,936 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (4): mlflow:5000
+2021-12-18 13:01:04,213 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=1, connect=1, read=5, redirect=5, status=5)
+2021-12-18 13:01:20,226 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024167BD81C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:01:20,228 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (5): mlflow:5000
+2021-12-18 13:01:22,522 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=0, connect=0, read=5, redirect=5, status=5)
+2021-12-18 13:02:08,944 INFO root MainThread post: Posting data in progress...
+2021-12-18 13:02:08,965 INFO root MainThread post: Posting data successfully finished
+2021-12-18 13:02:40,026 INFO root MainThread post: Posting data in progress...
+2021-12-18 13:02:40,045 INFO root MainThread post: Posting data successfully finished
+2021-12-18 13:02:40,048 INFO root MainThread data_preprocessing: Preprocessing data in progress...
+2021-12-18 13:02:40,059 INFO root MainThread data_preprocessing: Preprocessing data successfully finished
+2021-12-18 13:02:40,060 INFO root MainThread fit: Fitting model in progress...
+2021-12-18 13:02:40,178 DEBUG git.cmd MainThread execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\tests, universal_newlines=False, shell=None, istream=None)
+2021-12-18 13:02:40,248 DEBUG git.cmd MainThread execute: Popen(['git', 'version'], cwd=\\wsl$\Ubuntu\home\stristan\api_project\tests, universal_newlines=False, shell=None, istream=None)
+2021-12-18 13:02:40,313 DEBUG git.util MainThread is_cygwin_git: Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Не удается найти указанный файл', None, 2, None)
+2021-12-18 13:02:40,368 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (1): mlflow:5000
+2021-12-18 13:02:42,663 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=4, connect=4, read=5, redirect=5, status=5)
+2021-12-18 13:02:42,664 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000175C3D87DF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:02:42,665 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (2): mlflow:5000
+2021-12-18 13:02:44,948 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=3, connect=3, read=5, redirect=5, status=5)
+2021-12-18 13:02:48,955 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000175C3D87E20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:02:48,959 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (3): mlflow:5000
+2021-12-18 13:02:51,249 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=2, connect=2, read=5, redirect=5, status=5)
+2021-12-18 13:02:59,254 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000175C3DA2280>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:02:59,258 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (4): mlflow:5000
+2021-12-18 13:03:01,539 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=1, connect=1, read=5, redirect=5, status=5)
+2021-12-18 13:03:17,554 WARNING urllib3.connectionpool MainThread urlopen: Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000175C3DA2880>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/2.0/mlflow/runs/create
+2021-12-18 13:03:17,555 DEBUG urllib3.connectionpool MainThread _new_conn: Starting new HTTP connection (5): mlflow:5000
+2021-12-18 13:03:19,843 DEBUG urllib3.util.retry MainThread increment: Incremented Retry for (url='/api/2.0/mlflow/runs/create'): Retry(total=0, connect=0, read=5, redirect=5, status=5)
+2021-12-18 13:04:13,063 INFO root MainThread post: Posting data in progress...
+2021-12-18 13:04:13,083 INFO root MainThread post: Posting data successfully finished
