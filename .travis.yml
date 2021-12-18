@@ -14,7 +14,7 @@ before_script:
 #  - docker-compose -f docker-compose.yml up --build -d
 
 script:
-  - docker-compose run --rm app sh -c "python test.py"
+  - docker-compose run --rm app sh -c "python -m unittest discover"
 
 branches:
   only:
