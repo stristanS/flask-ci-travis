@@ -10,9 +10,9 @@
     │   ├── example_http_requests.py  	# запуск всех методов flask - приложения
     │   ├── README.md    
     │   ├── requirements.txt    
-    │   └── test.py                     # тестирование unittest
+    │   └── test.py                         # тестирование unittest
     ├── mlflow
-    │   └── Dockerfile                  # mlflow для управления экспериментами
+    │   └── Dockerfile                      # mlflow для управления экспериментами
     ├── storage				
     ├── .travis.yml
     ├── docker-compose.yml
