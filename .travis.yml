@@ -13,16 +13,18 @@ before_script:
   - pip install -r requirements-dev.txt
 #  - docker-compose -f docker-compose.yml up --build -d
 
-
 script:
   - docker-compose run --rm app sh -c "python -m unittest discover"
 
 after_success:
   - docker image list
   - docker build -t flask_app_ci ./api_project
+  - docker build -t mlflow_ci ./mlflow
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker tag mlflow_ci ttris117/mlflow_ci
   - docker tag flask_app_ci ttris117/flask_app_ci
   - docker push ttris117/flask_app_ci:latest
+  - docker push ttris117/mlflow_ci:latest
 
 branches:
   only:

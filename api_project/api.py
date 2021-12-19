@@ -10,16 +10,13 @@ from sklearn import preprocessing
 import logging
 from prometheus_flask_exporter import PrometheusMetrics
 import mlflow.sklearn
-from mlflow.models.signature import infer_signature
-
 
 logging.basicConfig(filename='../storage/record.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s %(funcName)s: %(message)s')
-
 app = Flask(__name__)
 api = Api(app)
-
-metrics = PrometheusMetrics(app)
+metrics = PrometheusMetrics(app, default_latency_as_histogram=False)
 mlflow.set_tracking_uri('http://mlflow:5000')
+
 
 class MLModelsDAO:
     def __init__(self):
@@ -30,14 +27,12 @@ class MLModelsDAO:
         self.train_x_ohe = None
         self.models = [{'model_id': 1, 'model': LinearRegression()}, {'model_id': 2, 'model': LogisticRegression(solver='liblinear')}]
 
-    @metrics.counter('cnt_gets_models', 'Number of gets models', labels={'status': lambda resp: resp.status_code})
+    @metrics.counter('my_custom_count_get_models_for_ml', 'Number of requests', labels={'status': lambda resp: resp.status_code})
     def get(self):
         models_dict = {}
         for model in self.models:
             models_dict[model['model_id']] = str(model['model'])
         return models_dict
-
-
 
     def post(self, data):
         try:
@@ -62,9 +57,6 @@ class MLModelsDAO:
             logging.error('MemoryError')
             api.abort(400, 'MemoryError, unable to allocate data')
 
-
-    # @metrics.do_not_track()
-    # @metrics.counter('cnt_data_preprocessing', 'Number of data preprocessing', labels={'status': lambda resp: resp.status_code})
     def data_preprocessing(self, data):
         try:
             logging.info('Preprocessing data in progress...')
@@ -89,9 +81,7 @@ class MLModelsDAO:
             logging.error('Invalid input data')
             api.abort(400, 'Invalid input data.')
 
-    @metrics.do_not_track()
-    # @metrics.summary('time_fit_model', 'Time takes for inference',
-    #                  labels={'status': lambda resp: resp.status})
+    @metrics.summary('my_custom_summary_fit_model', 'Time of request', labels={'status': lambda resp: resp.status_code})
     def fit(self, model_id, params):
         if self.data is None:
             logging.error('No data found')
@@ -107,22 +97,16 @@ class MLModelsDAO:
                     else:
                         logging.warning('Default params were set')
                         model = mod['model']
-                    with mlflow.start_run(run_name='1'):
+                    with mlflow.start_run(run_name='init_fit'):
                         model.fit(x, y)
                         pickle.dump(model, open(self.model_file_name+"{name}.pickle".format(name=model_id), "wb"))
                         logging.info('Fitting model successfully finished')
                         mlflow.log_params(model.get_params())
-                        # signatute = infer_signature(x, model.predict(x))
-                        # mlflow.sklearn.log_model(model, 'skl_model', signatute=signatute, registered_model_name='titanic')
-
                     return {'status_code': 200}
                 except ValueError:
                     logging.error('Invalid parameter for estimator {}.'.format(str(mod['model'])))
                     api.abort(400, 'Invalid parameter for estimator {}.'.format(str(mod['model'])))
 
-    # @metrics.do_not_track()
-    # @metrics.counter('cnt_predict_model', 'Number of predict model',
-                     # labels={'status': lambda resp: resp.status_code})
     def predict(self, model_id, data):
         data = pd.read_json(data)
         if self.data is None:
@@ -149,9 +133,6 @@ class MLModelsDAO:
                     logging.error('Wrong dim')
                     api.abort(400, 'Dimension mismatch. Check provided data features.')
 
-    # @metrics.do_not_track()
-    # @metrics.counter('cnt_retrain_model', 'Number of retrain model',
-    #                  labels={'status': lambda resp: resp.status_code})
     def retrain(self, model_id, data):
         try:
             params = data['params']
@@ -169,9 +150,6 @@ class MLModelsDAO:
                     api.abort(400, 'Train initial model with id {} first.'.format(model_id))
         logging.info('Retrain successfully finished')
 
-    # @metrics.do_not_track()
-    # @metrics.counter('cnt_delete_model', 'Number of delete model',
-    #                  labels={'status': lambda resp: resp.status_code})
     def delete(self, model_id):
         try:
             logging.info('Deleting model...')

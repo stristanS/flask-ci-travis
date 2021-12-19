@@ -4,6 +4,64 @@
     <list default="true" id="bf0c5653-c10b-4ead-b2ff-f510eeabd539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/api_project/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_project/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/data/autos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/data/brest_canser_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/data/brest_canser_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/example_http_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_project/example_http_requests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/params/copy_X" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/params/fit_intercept" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/params/n_jobs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/params/normalize" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/tags/mlflow.runName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/tags/mlflow.source.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/tags/mlflow.source.type" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/06d94bc463c84f989f6ad59f881805a1/tags/mlflow.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/23f0c2374fc44c95948214c8a165923d/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/23f0c2374fc44c95948214c8a165923d/tags/mlflow.runName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/23f0c2374fc44c95948214c8a165923d/tags/mlflow.source.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/23f0c2374fc44c95948214c8a165923d/tags/mlflow.source.type" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/23f0c2374fc44c95948214c8a165923d/tags/mlflow.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/params/copy_X" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/params/fit_intercept" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/params/n_jobs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/params/normalize" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/tags/mlflow.runName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/tags/mlflow.source.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/tags/mlflow.source.type" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6281b354a9034de494769f42a199bf2b/tags/mlflow.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/params/copy_X" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/params/fit_intercept" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/params/n_jobs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/params/normalize" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/tags/mlflow.runName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/tags/mlflow.source.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/tags/mlflow.source.type" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/6a5a67aa9c6f4d0e88e4492442184b4f/tags/mlflow.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/8866a083b3324f44b91c31279e09e910/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/8866a083b3324f44b91c31279e09e910/tags/mlflow.source.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/8866a083b3324f44b91c31279e09e910/tags/mlflow.source.type" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/8866a083b3324f44b91c31279e09e910/tags/mlflow.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/ded392ec9ab54653bb569d173d885077/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/ded392ec9ab54653bb569d173d885077/tags/mlflow.runName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/ded392ec9ab54653bb569d173d885077/tags/mlflow.source.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/ded392ec9ab54653bb569d173d885077/tags/mlflow.source.type" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/ded392ec9ab54653bb569d173d885077/tags/mlflow.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/f50d9650caff4d188699e9189f84e096/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/f50d9650caff4d188699e9189f84e096/tags/mlflow.runName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/f50d9650caff4d188699e9189f84e096/tags/mlflow.source.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/f50d9650caff4d188699e9189f84e096/tags/mlflow.source.type" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/f50d9650caff4d188699e9189f84e096/tags/mlflow.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/0/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/mlruns/1/meta.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/record.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_project/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/record.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,8 +193,8 @@
       <list>
         <item itemvalue="Python.example_http_requests (1)" />
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python tests.Unittests in test.py" />
         <item itemvalue="Python.api (1)" />
+        <item itemvalue="Python tests.Unittests in test.py" />
         <item itemvalue="Python.example_http_requests" />
       </list>
     </recent_temporary>
@@ -248,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639841080618</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="travis fix after_success">
+      <created>1639844249854</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1639844249855</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
