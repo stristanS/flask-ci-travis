@@ -272,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639916076146</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="mlflow port change">
+      <created>1639917540155</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639917540155</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -284,6 +291,7 @@
     <MESSAGE value="travis fix after_success" />
     <MESSAGE value="readme &amp; finalisation" />
     <MESSAGE value="readme &amp; finalisation v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme &amp; finalisation v2" />
+    <MESSAGE value="mlflow port change" />
+    <option name="LAST_COMMIT_MESSAGE" value="mlflow port change" />
   </component>
 </project>
