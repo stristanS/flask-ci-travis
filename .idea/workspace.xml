@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bf0c5653-c10b-4ead-b2ff-f510eeabd539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_project/example_http_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_project/example_http_requests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_project/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_project/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlflow/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mlflow/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639915358658</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="readme &amp; finalisation v2">
+      <created>1639916076146</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1639916076146</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -275,6 +283,7 @@
     <MESSAGE value="travis add docker push" />
     <MESSAGE value="travis fix after_success" />
     <MESSAGE value="readme &amp; finalisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme &amp; finalisation" />
+    <MESSAGE value="readme &amp; finalisation v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme &amp; finalisation v2" />
   </component>
 </project>

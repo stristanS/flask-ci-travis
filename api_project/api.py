@@ -15,7 +15,7 @@ logging.basicConfig(filename='../storage/record.log', level=logging.DEBUG, forma
 app = Flask(__name__)
 api = Api(app)
 metrics = PrometheusMetrics(app, default_latency_as_histogram=False)
-mlflow.set_tracking_uri('http://mlflow:5000')
+mlflow.set_tracking_uri('http://mlflow:5001')
 
 
 class MLModelsDAO:

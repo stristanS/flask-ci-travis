@@ -1,4 +1,4 @@
 FROM python:3.8
 RUN pip install mlflow
 
-EXPOSE 5000
+EXPOSE 5001
